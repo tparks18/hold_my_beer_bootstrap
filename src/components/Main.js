@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar';
-import Footer from './Footer';
+// import Footer from './Footer';
 
 const Main = () => {
     return <React.Fragment>
@@ -13,7 +13,7 @@ const Main = () => {
         </main>
 
         <footer>
-        <Footer />
+        {/* <Footer /> */}
         </footer>
         </React.Fragment>;
 }

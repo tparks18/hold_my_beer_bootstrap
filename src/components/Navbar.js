@@ -56,6 +56,12 @@ const Navbar = () => {
                   <a className="dropdown-item" href="/profile">
                     Profile
                   </a>
+                  <a className="dropdown-item" href="/myposts">
+                    My Posts
+                  </a>
+                  <a className="dropdown-item" href="/profile">
+                    My Videos
+                  </a>
                   <a className="dropdown-item" href="/settings">
                     Settings
                   </a>

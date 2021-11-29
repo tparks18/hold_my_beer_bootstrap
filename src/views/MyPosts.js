@@ -9,15 +9,6 @@ const MyPosts = () => {
               {/* New Post Modal Here */}
 
               {/* Button trigger modal */}
-              <button
-                type="button"
-                className="float-end btn btn-primary"
-                data-mdb-toggle="modal"
-                data-mdb-target="#exampleModal"
-              >
-                <i style={{ marginRight: 5 }} class="fas fa-pen"></i>
-                New Post
-              </button>
               {/* Modal */}
               <div
                 className="modal fade"
@@ -76,7 +67,7 @@ const MyPosts = () => {
               {/* End of new post modal here */}
 
               <div className="panel-heading">
-                <h3 className="panel-title">Daily feed</h3>
+                <h3 className="panel-title">My Posts</h3>
               </div>
               <div className="panel-body">
                 {/* style={{ marginLeft: 10 }} */}
@@ -88,19 +79,26 @@ const MyPosts = () => {
                         <h4 className="media-heading">
                           <a className="name">First Last</a> made a new post.
                         </h4>
-                        <div>This is my blog post.</div>
+                        <div>
+                          This is my blog post that I can see on the page of my
+                          posts.
+                        </div>
                         <small>Today 2:55 pm - 11.28.2021</small>
                         <div className="actions margin-top-10">
-                          <button
-                            type="button"
-                            className="btn btn-success btn-xs waves-effect waves-light"
-                          >
-                            <i
-                              style={{ marginRight: 5 }}
-                              class="fas fa-thumbs-up"
-                            ></i>
-                            Like
-                          </button>
+                          <div className="row">
+                            
+                            <div className="text-center py-2 col-2">
+                              <button type="button" className="btn btn-success">
+                                Update
+                              </button>
+                            </div>
+
+                            <div className="text-center py-2 col-2">
+                              <button type="button" className="btn btn-danger">
+                                Delete
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>

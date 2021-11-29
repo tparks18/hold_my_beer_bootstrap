@@ -53,7 +53,6 @@ const MyVideos = () => {
                 </a>
               </div>
             </div>
-            
           </div>
         </section>
         {/* Section: Images */}

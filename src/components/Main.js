@@ -1,21 +1,19 @@
-import React from 'react'
-import Navbar from './Navbar';
+import React from "react";
+import Navbar from "./Navbar";
 // import Footer from './Footer';
 
 const Main = () => {
-    return <React.Fragment>
-        <header>
+  return (
+    <React.Fragment>
+      <header>
         <Navbar />
-        </header>
+      </header>
 
-        <main>
+      <main></main>
 
-        </main>
+      <footer>{/* <Footer /> */}</footer>
+    </React.Fragment>
+  );
+};
 
-        <footer>
-        {/* <Footer /> */}
-        </footer>
-        </React.Fragment>;
-}
-
-export default Main
+export default Main;

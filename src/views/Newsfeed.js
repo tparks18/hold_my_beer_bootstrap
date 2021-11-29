@@ -119,7 +119,9 @@ const Newsfeed = () => {
                       <h4 className="media-heading">
                         <a className="name">Another user</a> made a new post.
                       </h4>
-                      <div>This blog post belongs to a user I am following.</div>
+                      <div>
+                        This blog post belongs to a user I am following.
+                      </div>
                       <small>Today 3:55 pm - 11.29.2021</small>
                       <div className="actions margin-top-10">
                         <button

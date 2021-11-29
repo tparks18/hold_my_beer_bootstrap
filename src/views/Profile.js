@@ -9,7 +9,7 @@ const Profile = () => {
             <div className="card">
               <div className="card-body">
                 <div className="d-flex flex-column align-items-center text-center">
-                  <i class="fas fa-user-ninja fa-5x"></i>
+                  <i className="fas fa-user-ninja fa-5x"></i>
                   <div>profile pic here</div>
                   <div className="mt-3">
                     <h4>First Last</h4>

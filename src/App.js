@@ -2,11 +2,14 @@ import React from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Main from "./components/Main";
-import LandingPage from "./components/LandingPage";
-import Videos from "./components/Videos";
-import Profile from "./components/Profile";
-import Settings from "./components/Settings";
-import Newsfeed from "./components/Newsfeed";
+import LandingPage from "./views/LandingPage";
+import Videos from "./views/Videos";
+import Profile from "./views/Profile";
+import Settings from "./views/Settings";
+import Newsfeed from "./views/Newsfeed";
+import MyPosts from "./views/MyPosts";
+import Register from "./views/Register";
+import Login from "./views/Login";
 
 function App() {
   return (
@@ -17,8 +20,11 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/dashboard" element={<Settings />} />
+          <Route path="/settings" element={<Settings />} />
           <Route path="/newsfeed" element={<Newsfeed />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/myposts" element={<MyPosts />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </main>
     </React.Fragment>

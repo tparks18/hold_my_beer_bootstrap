@@ -25,7 +25,7 @@ const Navbar = () => {
             <ul className="navbar-nav">
               <li className="nav-item active">
                 <a className="nav-link" href="/">
-                  Home <span className="sr-only">(current)</span>
+                  Home
                 </a>
               </li>
               <li className="nav-item">
@@ -56,8 +56,8 @@ const Navbar = () => {
                   <a className="dropdown-item" href="/profile">
                     Profile
                   </a>
-                  <a className="dropdown-item" href="/dashboard">
-                    Dashboard
+                  <a className="dropdown-item" href="/settings">
+                    Settings
                   </a>
                   <a className="dropdown-item" href="/logout">
                     Logout

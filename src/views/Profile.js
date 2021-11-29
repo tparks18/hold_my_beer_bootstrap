@@ -18,7 +18,13 @@ const Profile = () => {
                     <div className="mt-3">
                       <h4>First Last</h4>
                       <p className="text-muted font-size-sm">@username</p>
-                      <button className="btn btn-primary">Follow</button>
+                      <button className="btn btn-primary">
+                        <i
+                          style={{ marginRight: 5 }}
+                          class="fas fa-user-plus"
+                        ></i>
+                        Follow
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -183,10 +189,7 @@ const Profile = () => {
                 <div className="col-sm-6 mb-3">
                   <div className="card h-100">
                     <div className="card-body">
-                      <h6 className="d-flex align-items-center mb-3">
-                        Posts
-                      </h6>
-                      
+                      <h6 className="d-flex align-items-center mb-3">Posts</h6>
                     </div>
                   </div>
                 </div>

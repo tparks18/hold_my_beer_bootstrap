@@ -22,47 +22,35 @@ const Settings = () => {
                 </a>
               </li>
 
-              {/* <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    id="home-tab"
-                    data-toggle="tab"
-                    href="#home"
-                    role="tab"
-                    aria-controls="home"
-                    aria-selected="false"
-                  >
-                    Voting History
-                  </a>
-                </li> */}
             </ul>
             <form>
               <div className="row mt-5 align-items-center">
                 <div className="col-md-3 text-center mb-5">
                   <i class="fas fa-user-ninja fa-5x"></i>
-                  <div>profile pic here</div>
+                  <div>current pro pic here</div>
+                  <div className="col">
+                    <button type="button" className="btn btn-primary">
+                      <i style={{ marginRight: 5 }} class="fas fa-image"></i>
+                      Change
+                    </button>
+                  </div>
                 </div>
+
                 <div className="col">
                   <div className="row align-items-center">
                     <div className="col-md-7">
-                      <h4 className="mb-1">Name</h4>
+                      <h4 className="mb-1">Current Name</h4>
                       <p className="small mb-3">
-                        <span className="badge badge-dark">Location</span>
+                        <span className="badge badge-dark">Current Location</span>
                       </p>
                     </div>
                   </div>
                   <div className="row mb-4">
                     <div className="col-md-7">
                       <p className="text-muted">
-                        This is my about me. I'm here to prove that I am the
+                        This is my current about me. I'm here to prove that I am the
                         most badass.
                       </p>
-                    </div>
-                    <div className="col">
-                      <button type="button" className="btn btn-primary">
-                        <i style={{ marginRight: 5 }} class="fas fa-edit"></i>
-                        Edit
-                      </button>
                     </div>
                   </div>
                 </div>
@@ -128,6 +116,18 @@ const Settings = () => {
                       name="Facebook"
                       className="form-control"
                       placeholder="Facebook"
+                    />
+                  </div>
+                </div>
+
+                <div className="col-md-6 standardized">
+                  <div className="form-group">
+                    <label htmlFor="about">About</label>
+                    <input
+                      type="text"
+                      name="About"
+                      className="form-control"
+                      placeholder="About"
                     />
                   </div>
                 </div>

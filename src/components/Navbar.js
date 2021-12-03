@@ -1,4 +1,6 @@
 import React from "react";
+import holdmybeerlogo from "../images/holdmybeerlogops.png";
+
 
 const Navbar = () => {
   return (
@@ -8,7 +10,8 @@ const Navbar = () => {
         className="navbar navbar-expand-lg navbar-dark bg-primary"
       >
         <a style={{ marginLeft: 20 }} className="navbar-brand" href="/">
-          Hold My Beer 🍺
+          Hold My Beer
+          <img style={{ marginLeft: 8, height: 35 }} src={holdmybeerlogo} alt="beer" />
         </a>
         <button
           className="navbar-toggler"

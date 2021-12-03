@@ -9,7 +9,9 @@ const Main = () => {
         <Navbar />
       </header>
 
-      <main></main>
+      <main>
+        
+      </main>
 
       <footer>{/* <Footer /> */}</footer>
     </React.Fragment>

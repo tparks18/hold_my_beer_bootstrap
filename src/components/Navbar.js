@@ -56,15 +56,15 @@ const Navbar = () => {
                 <a className="dropdown-item" href="/profile">
                   Profile
                 </a>
-                <a className="dropdown-item" href="/myposts">
+                {/* <a className="dropdown-item" href="/myposts">
                   My Posts
-                </a>
+                </a> */}
 
                 <a className="dropdown-item" href="/votinghistory">
                   Voting History
                 </a>
 
-                <a className="dropdown-item" href="/profile">
+                <a className="dropdown-item" href="/myvideos">
                   My Videos
                 </a>
                 <a className="dropdown-item" href="/settings">

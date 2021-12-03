@@ -7,7 +7,7 @@ import Videos from "./views/Videos";
 import Profile from "./views/Profile";
 import Settings from "./views/Settings";
 // import Newsfeed from "./views/Newsfeed";
-import MyPosts from "./views/MyPosts";
+// import MyPosts from "./views/MyPosts";
 import Register from "./views/Register";
 import Login from "./views/Login";
 import VotingHistory from "./views/VotingHistory";
@@ -26,7 +26,7 @@ function App() {
           <Route path="/settings" element={<Settings />} />
           {/* <Route path="/newsfeed" element={<Newsfeed />} /> */}
           <Route path="/register" element={<Register />} />
-          <Route path="/myposts" element={<MyPosts />} />
+          {/* <Route path="/myposts" element={<MyPosts />} /> */}
           <Route path="/myvideos" element={<MyVideos />} />
           <Route path="/login" element={<Login />} />
           <Route path="/votinghistory" element={<VotingHistory />} />

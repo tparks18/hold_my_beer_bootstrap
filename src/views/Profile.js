@@ -187,7 +187,7 @@ const Profile = () => {
               </div>
             </div>
 
-            <div className="row gutters-sm">
+            {/* <div className="row gutters-sm">
               <div className="col-sm-6 mb-3">
                 <div className="card h-100">
                   <div className="card-body">
@@ -199,7 +199,8 @@ const Profile = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
+            
           </div>
         </div>
       </div>

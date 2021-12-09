@@ -1,12 +1,16 @@
 import React from 'react'
-import undrawsvg from "../images/undraw_having_beer.svg";
+import landingpic from "../images/holdmybeerlandingpagegraphic.png";
 
 const LandingPage = () => {
     return (
       <div>
         <div className="big-container">
           <div className="landing-image-container">
-            <img src={undrawsvg} alt="beer" />
+            <img
+              style={{ height: "500px" }}
+              src={landingpic}
+              alt="manskateboarding"
+            />
           </div>
           <div className="text1 center-text">
             <i className="fas fa-upload fa-2x"></i>

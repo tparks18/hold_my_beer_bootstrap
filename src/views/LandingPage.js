@@ -18,11 +18,11 @@ const LandingPage = () => {
             <div className="center-text"></div>
           </div>
           <div className="text2 center-text">
-            <i class="fas fa-thumbs-up fa-2x"></i>
+            <i className="fas fa-thumbs-up fa-2x"></i>
             <h1 className="slogan">Vote</h1>
           </div>
           <div className="text3 center-text">
-            <i class="fas fa-users fa-2x"></i>
+            <i className="fas fa-users fa-2x"></i>
             <h1 className="slogan">Be Discovered</h1>
           </div>
         </div>

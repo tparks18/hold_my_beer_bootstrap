@@ -5,11 +5,15 @@ import { BrowserRouter } from "react-router-dom";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.min.css";
+import {CloudinaryContext} from 'cloudinary-react';
 
 ReactDOM.render(
+
   <React.StrictMode>
     <BrowserRouter>
-    <App />
+      <CloudinaryContext cloudName="cae67" secure="true" upload_preset="dwxv7gsk">
+        <App />
+      </CloudinaryContext>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

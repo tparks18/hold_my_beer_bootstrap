@@ -12,28 +12,26 @@ import Register from "./views/Register";
 import Login from "./views/Login";
 import VotingHistory from "./views/VotingHistory";
 import MyVideos from "./views/MyVideos";
-
+import AppContextProvider from "./context/UserContext";
 
 function App() {
-  const [user, setUser] = useState({});
-
   return (
     <React.Fragment>
-      <Main />
-      <main className="container">
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/videos" element={<Videos />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/settings" element={<Settings />} />
-          {/* <Route path="/newsfeed" element={<Newsfeed />} /> */}
-          <Route path="/register" element={<Register />} />
-          {/* <Route path="/myposts" element={<MyPosts />} /> */}
-          <Route path="/myvideos" element={<MyVideos />} />
-          <Route path="/login" element={<Login setUser={setUser}/>} />
-          <Route path="/votinghistory" element={<VotingHistory />} />
-        </Routes>
-      </main>
+        <AppContextProvider>
+        <Main />
+        <main className="container">
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/videos" element={<Videos />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/myvideos" element={<MyVideos />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/votinghistory" element={<VotingHistory />} />
+          </Routes>
+        </main>
+        </AppContextProvider>
     </React.Fragment>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import holdmybeerlogo from "../images/holdmybeerlogops.png";
-
+import {Link} from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -9,10 +9,10 @@ const Navbar = () => {
         style={{ marginBottom: 20 }}
         className="navbar navbar-expand-lg navbar-dark bg-primary"
       >
-        <a style={{ marginLeft: 20 }} className="navbar-brand" href="/">
+        <Link style={{ marginLeft: 20 }} className="navbar-brand" to="/">
           Hold My Beer
           <img style={{ marginLeft: 8, height: 35 }} src={holdmybeerlogo} alt="beer" />
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -27,24 +27,23 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="/">
+              <Link className="nav-link" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/videos">
+              <Link className="nav-link" to="/videos">
                 Videos
-              </a>
+              </Link>
             </li>
             {/* <li className="nav-item">
-              <a className="nav-link" href="/newsfeed">
+              <Link className="nav-link" to="/newsfeed">
                 Newsfeed
-              </a>
+              </Link>
             </li> */}
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
-                //   href="/"
+                className="nav-link dropdown-toggle"                
                 id="navbarDropdownMenuLink"
                 data-toggle="dropdown"
                 aria-haspopup="true"
@@ -56,26 +55,26 @@ const Navbar = () => {
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a className="dropdown-item" href="/profile">
+                <Link className="dropdown-item" to="/profile">
                   Profile
-                </a>
-                {/* <a className="dropdown-item" href="/myposts">
+                </Link>
+                {/* <Link className="dropdown-item" to="/myposts">
                   My Posts
-                </a> */}
+                </Link> */}
 
-                <a className="dropdown-item" href="/votinghistory">
+                <Link className="dropdown-item" to="/votinghistory">
                   Voting History
-                </a>
+                </Link>
 
-                <a className="dropdown-item" href="/myvideos">
+                <Link className="dropdown-item" to="/myvideos">
                   My Videos
-                </a>
-                <a className="dropdown-item" href="/settings">
+                </Link>
+                <Link className="dropdown-item" to="/settings">
                   Settings
-                </a>
-                <a className="dropdown-item" href="/logout">
+                </Link>
+                <Link className="dropdown-item" to="/logout">
                   Logout
-                </a>
+                </Link>
               </div>
             </li>
           </ul>

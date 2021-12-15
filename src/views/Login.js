@@ -1,12 +1,14 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useContext} from "react";
 import beerpour from "../images/undraw_beer.svg";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 import {useLogin} from "../api/apiLogin"
 import { Navigate } from "react-router";
+import {UserContext} from "../context/UserContext";
+
 
 const FormFieldElement = (props) => 
-  (<div style={{ marginTop: 15 }} className="row">
+(<div style={{ marginTop: 15 }} className="row">
     <div className="block standardized">
       <div className="form-group">
         {props.children}
@@ -26,13 +28,13 @@ const FormSubmitElement=(props)=>(
 )
 
 const styles = {
-    error: { color: "red" },
-  };
+  error: { color: "red" },
+};
 
 const FormSchema = Yup.object().shape({
   email: Yup.string()
-    .email("Must be a valid e-mail format")
-    .required("Required"),
+  .email("Must be a valid e-mail format")
+  .required("Required"),
   password: Yup.string().required("Required"),
 });
 
@@ -43,28 +45,29 @@ const initialValues = {
 
 
 const Login = (props) => {
+  const { user, setUser } = useContext(UserContext);
   const[creds, setCreds]=useState({})
   const login = useLogin(creds.email, creds.password)
   
   const handleSubmit = ({email, password})=>{  
     setCreds({"password":password,"email":email.toLowerCase()})
   }
-
+  
   useEffect(
     ()=>{
       if (login.data?.token){
-        props.setUser(login.data)
+        setUser(login.data)
       }
       return ()=>{
-        if (login.data?.token)props.setUser(login.data)
+        if (!user && login.data?.token)setUser(login.data)
       }
     },[login.data, props])
-
-
-
-  if (login.data?.token){return (<Navigate to="/"/>)}
-  return (
-    <div>
+    
+    
+    
+    if (login.data?.token){return (<Navigate to="/"/>)}
+    return (
+      <div>
       <section className="vh-100">
         <div className="container py-5 h-90">
           <div className="row d-flex align-items-center justify-content-center h-100">

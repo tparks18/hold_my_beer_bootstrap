@@ -1,0 +1,48 @@
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.big-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "landing-image-container landing-image-container text1"
+    "landing-image-container landing-image-container text2"
+    "landing-image-container landing-image-container text3";
+}
+
+.landing-image-container {
+  grid-area: landing-image-container;
+}
+
+.text1 {
+  grid-area: text1;
+}
+
+.text2 {
+  grid-area: text2;
+}
+
+.text3 {
+  grid-area: text3;
+}
+
+.slogan {
+  text-align: center;
+  color: #2f2e41;
+}
+
+.center-text {
+  margin: auto;
+  width: 50%;
+}
+
+.fa-2x {
+  color: #2f2e41;
+  margin-left: 40%;
+}

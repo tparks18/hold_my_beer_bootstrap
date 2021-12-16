@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import landingpic from "../images/holdmybeerlandingpagegraphic.png";
 
 const LandingPage = () => {
+    
     return (
       <div>
         <div className="big-container">

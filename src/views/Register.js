@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import beer from "../images/beer-unsplash.jpg";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
